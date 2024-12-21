@@ -1,0 +1,103 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0px 2px 5px rgba(127, 190, 151, 0.2); /* Ajout d'une ombre douce */
+  }
+  
+  .title__h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .title__link{
+    text-decoration: none;
+  }
+  
+  /* Menu masqué par défaut */
+  .nav__list {
+    display: flex;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .nav__link {
+    text-decoration: none;
+    color: #ffffff; /* Couleur par défaut */
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+
+  .nav__link i {
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .nav__link:hover i {
+    transform: scale(1.6); /* Agrandit l'icône au survol */
+    color: #7fbe97; /* Change la couleur de l'icône en vert au survol */
+  }
+  
+  
+
+  @media screen and (min-width: 1200px) {
+    .header{
+
+        min-height: 10vh;
+        min-width: 1200px;
+        justify-content: space-around;
+
+    }
+
+    .title__h1 {
+        font-size: 4rem;
+      }
+
+      .nav__list{
+        display: flex;
+        justify-content: center;
+        width: 1000px;
+        gap: 5rem;
+
+      }
+
+      .nav__link {
+        font-size: 4rem;
+        gap: 1rem;
+      }
+
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+
+    .header{
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .nav__list{
+        width: 80%;
+    }
+    
+  }
+  

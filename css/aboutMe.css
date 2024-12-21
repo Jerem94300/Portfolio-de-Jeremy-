@@ -1,0 +1,198 @@
+@import url(/css/reset.css);
+@import url(/css/header.css);
+@import url(/css/body.css);
+@import url(/css/footer.css);
+@import url(/css/variables.css);
+
+
+/* page about me*/
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .card__front, .card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .card__front {
+    background: rgba(127, 190, 151, 0.8);
+  }
+  
+  .card__back {
+    background: rgba(26, 26, 26, 0.9);
+    transform: rotateY(180deg);
+  }
+  
+  
+  
+  /* page about me*/
+  
+  
+  /* Styles spécifiques à la section "À propos" */
+  .about-me {
+    padding: 2rem;
+    background: linear-gradient(145deg, #1a1a1a, #202020); /* Dégradé subtil */
+    color: #ffffff;
+    border-radius: 20px; /* Angles arrondis légèrement plus prononcés */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    margin: 2rem auto; /* Centré avec espacement vertical */
+    max-width: 80%; /* Limiter la largeur pour un rendu harmonieux */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animation */
+  }
+  
+  .about-me:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Ombre plus marquée */
+    transform: scale(1.005); /* Légère mise en avant */
+  }
+  
+  .about-me__title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #7fbe97;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Conteneur des cartes */
+  .about-me .card-container {
+    display: flex; /* Flexbox pour disposition horizontale */
+    flex-direction: row; /* Aligner les cartes en ligne */
+    gap: 6rem; /* Espacement entre les cartes */
+    justify-content: center; /* Centrer les cartes horizontalement */
+    align-items: center; /* Alignement vertical */
+    padding: 2rem;
+    overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+  }
+  
+  .about-me .card-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .about-me .card-container::-webkit-scrollbar-thumb {
+    background: rgba(127, 190, 151, 0.8);
+    border-radius: 4px;
+  }
+  
+  .about-me .card-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(127, 190, 151, 1);
+  }
+  
+  .about-me .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espacement entre les boutons */
+    margin-top: 2rem;
+  }
+  
+  /* Cartes */
+  .about-me .card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .about-me .card__front,
+  .about-me .card__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.8s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-me .card__front {
+    background: linear-gradient(180deg, #1e1e1e, #3a3a3a);
+  }
+    .about-me .card__back {
+    background: rgba(26, 26, 26, 0.9);
+    transform: rotateY(180deg);
+  }
+  
+  .about-me .card:hover .card__front {
+    transform: rotateY(180deg);
+  }
+  
+  .about-me .card:hover .card__back {
+    transform: rotateY(0deg);
+  }
+  
+  .about-me .card__image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    background-color: #333; /* Fond au cas où l'image manque */
+  }
+  
+  .about-me .card__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 1rem;
+  }
+  
+  .about-me .card__content {
+    font-size: 1rem;
+    color: #ffffff;
+    padding: 1rem;
+  }
+  
+
+
+  @media screen and (min-width: 1200px) {
+
+    .card-container {
+
+        min-height: 53vh;
+        margin: 2rem;
+
+
+    }
+
+
+
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .card-container {
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column !important;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+  }

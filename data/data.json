@@ -1,0 +1,21 @@
+{
+    "logos": [
+        {"id": 1, "nom": "html", "src": "/images/html.png"},
+        {"id": 2, "nom": "css", "src": "/images/css.png"},
+        {"id": 3, "nom": "javascript", "src": "/images/js.PNG"},
+        {"id": 4, "nom": "sass", "src": "/images/sass-cours-logo.jpg"},
+        {"id": 5, "nom": "bootstap", "src": "/images/Bootstrap_logo.svg"},
+        {"id": 6, "nom": "figma", "src": "/images/figma.png"},
+        {"id": 7, "nom": "php", "src": "/images/php.png"},
+        {"id": 8, "nom": "phpoo", "src": "/images/html.png"},
+        {"id": 9, "nom": "sql", "src": "/images/sql.PNG"},
+        {"id": 10, "nom": "symfony", "src": "/images/symfony.jpeg"},
+        {"id": 12, "nom": "git", "src": "/images/git.PNG"},
+        {"id": 13, "nom": "github", "src": "/images/github.WEBP"},
+        {"id": 14, "nom": "linux", "src": "/images/ub.png"},
+        {"id": 15, "nom": "seo", "src": "/images/seo.PNG"},
+        {"id": 16, "nom": "nginx", "src": "/images/nginx.png"}
+    ]
+
+
+    }

@@ -1,0 +1,173 @@
+@import url(/css/reset.css);
+@import url(/css/header.css);
+@import url(/css/body.css);
+@import url(/css/footer.css);
+@import url(/css/variables.css);
+
+
+/* Style page d'accueil */
+
+
+  .landing__page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title__main {
+    width: 600px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  
+  }
+  
+  .title__h2 {
+    font-size: 4rem;
+    color: #7fbe97;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .paragraph__main {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .presentation__main {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: flex-start;
+    margin-left: 10rem;
+  }
+  
+  
+
+  
+  
+  
+  .photo__item {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 0.1px solid #7fbe97; /* Couleur orangée */
+    box-shadow: 0 0 30px 6px rgba(90, 158, 116, 0.8); /* Initiale */
+    animation: pulse-and-scale 3s infinite ease-in-out; /* Une seule animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour hover */
+    display: flex;
+    justify-self: center !important;
+    align-self: center !important;
+  }
+  
+  .photo__item:hover {
+    transform: scale(1.1); /* Légère augmentation au survol */
+    box-shadow: 0 0 50px 15px rgba(90, 158, 116, 0.8); /* Accentuation du halo au survol */
+  
+  }
+  
+
+  @media screen and (min-width: 1200px) {
+    .landing__page{
+        display: flex;
+        justify-self: start !important;
+        text-align: start;
+        min-height: 74vh;
+    }
+
+    .title__main {
+        width: 25%;
+        font-size: 5rem;
+
+        
+    }
+
+    .paragraph__main{
+        width: 50%;
+        font-size: 3rem;
+
+
+    }
+
+    .photo__item{
+        width: 50%;
+        height: auto;
+
+    }
+  }
+  
+
+
+  @media screen and (max-width: 768px) {
+
+    .landing__page{
+        position: relative;
+        width: 80%;
+        min-height: 100vh;
+    }
+
+    .title__main {
+        margin-top: 1rem;
+        width: 100%;
+
+    }
+
+    
+    .photo__item{
+        display: flex;
+        position: fixed;
+        z-index: -1;
+        opacity: 10%;
+        top: 20%;
+        left: 35%;
+        
+      
+        
+
+    }
+
+    .btn__download{
+        margin-bottom: 1rem;
+    }
+
+
+  }
+
+
+  /* Animation de l'effet de lueur progressive */
+@keyframes sun-glow {
+    0% {
+      box-shadow: 0 0 30px 10px rgba(90, 158, 116, 0.8), 
+                  0 0 60px 20px rgba(90, 158, 116, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 40px 15px rgba(90, 158, 116, 0.8), 
+                  0 0 80px 30px rgba(90, 158, 116, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 30px 10px rgba(90, 158, 116, 0.8), 
+                  0 0 60px 20px rgba(90, 158, 116, 0.8);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse-and-scale {
+    0%, 100% {
+      box-shadow: 0 0 30px 6px rgba(90, 158, 116, 0.8);
+      transform: scale(1); /* Taille normale */
+    }
+    50% {
+      box-shadow: 0 0 40px 10px rgba(90, 158, 116, 0.8);
+      transform: scale(1.05); /* Légère augmentation */
+    }
+  }
+  
