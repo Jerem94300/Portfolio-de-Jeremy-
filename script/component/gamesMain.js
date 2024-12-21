@@ -8,15 +8,13 @@ export const Games = () => {
           <button class="btn__download btn__game" onclick="window.location.href='https://jerem94300.github.io/Mastermind/'">Jouer</button>
 
         </div>
-        <div class="experience__card" id="webdev">
-          <h2 class="title">Sudoku</h2>
-          <button class="btn__download" onclick="window.location.href='#'">Télécharger mon CV</button>
+        <div class="experience__card" id="sudoku">
+          <button class="btn__download btn__game" onclick="window.location.href='https://jerem94300.github.io/Mastermind/'">Jouer</button>
         </div>
 
         
-        <div class="experience__card" id="webdev">
-          <h2 class="title">Hangman</h2>
-          <button class="btn__download" onclick="window.location.href='#'">Télécharger mon CV</button>
+        <div class="experience__card" id="hangman">
+          <button class="btn__download btn__game" onclick="window.location.href='https://jerem94300.github.io/Mastermind/'">Jouer</button>
         </div>
 
         

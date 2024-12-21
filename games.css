@@ -38,6 +38,18 @@
   background-position: center;
 }
 
+#sudoku{
+  background-image: url('image_sudoku.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
+#hangman{
+  background-image: url('image_hangman.PNG');
+  background-size: cover;
+  background-position: center;
+}
+
 
 
 /* Cards principales avec fond sombre et animation verte */
