@@ -7,6 +7,13 @@
 
 /* Style page d'accueil */
 
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
   .landing__page {
     display: flex;
@@ -36,13 +43,16 @@
   }
   
   .presentation__main {
+    width: 100% !important;
     display: flex;
     flex-direction: column;
     width: auto;
     align-items: flex-start;
-    margin-left: 10rem;
+    justify-content: center !important;
+    align-self: center !important;
+    text-align: center;
+   
   }
-  
   
 
   
@@ -103,7 +113,7 @@
 
     .landing__page{
         position: relative;
-        width: 80%;
+        width: 50%;
         min-height: 100vh;
     }
 
@@ -112,6 +122,8 @@
         width: 100%;
 
     }
+
+   
 
     
     .photo__item{
@@ -129,6 +141,9 @@
 
     .btn__download{
         margin-bottom: 1rem;
+        display: flex;
+        align-self: center;
+        
     }
 
 
