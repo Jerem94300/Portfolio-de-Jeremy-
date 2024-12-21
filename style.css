@@ -33,6 +33,7 @@
     font-size: 4rem;
     color: #7fbe97;
     animation: fadeIn 2s ease-out;
+    text-align: center;
   }
   
   .paragraph__main {
@@ -81,21 +82,27 @@
   @media screen and (min-width: 1200px) {
     .landing__page{
         display: flex;
-        justify-self: start !important;
-        text-align: start;
+        text-align: center;
         min-height: 74vh;
     }
 
     .title__main {
-        width: 25%;
+        width: 100%;
         font-size: 5rem;
-
+        text-align: center;
         
     }
 
+    .title__h2{
+      width: 100%;
+      
+      text-align: center;
+
+    }
+
     .paragraph__main{
-        width: 50%;
-        font-size: 3rem;
+      width: 100%;
+      font-size: 3rem;
 
 
     }
@@ -105,6 +112,15 @@
         height: auto;
 
     }
+
+    .btn__download{
+        margin-bottom: 1rem;
+        display: flex;
+        align-self: center;
+        font-size: 4rem;
+        
+    }
+
   }
   
 
@@ -139,13 +155,7 @@
 
     }
 
-    .btn__download{
-        margin-bottom: 1rem;
-        display: flex;
-        align-self: center;
-        
-    }
-
+  
 
   }
 
