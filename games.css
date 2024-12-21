@@ -33,7 +33,7 @@
 }
 
 #military{
-  background-image: url(images/mastermind.jpeg);
+  background-image: url('images/mastermind.jpeg');
   background-size: cover;
   background-position: center;
 }
