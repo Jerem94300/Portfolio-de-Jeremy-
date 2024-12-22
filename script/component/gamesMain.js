@@ -14,7 +14,7 @@ export const Games = () => {
 
         
         <div class="experience__card" id="hangman">
-          <button class="btn__download btn__game" onclick="window.location.href='https://jerem94300.github.io/Mastermind/'">Jouer</button>
+          <button class="btn__download btn__game" onclick="window.location.href='https://jerem94300.github.io/Jeu-du-Pendu/'">Jouer</button>
         </div>
 
         
