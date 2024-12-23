@@ -52,6 +52,7 @@
   
   /* Styles spécifiques à la section "À propos" */
   .about-me {
+    margin-top: 8rem !important;
     padding: 2rem;
     background: linear-gradient(145deg, #1a1a1a, #202020); /* Dégradé subtil */
     color: #ffffff;
@@ -166,23 +167,33 @@
     color: #ffffff;
     padding: 1rem;
   }
+
+ 
+
+  .btn__back {
+    background-color: #5a9e74; /* Vert adouci */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 8px 1px rgba(90, 158, 116, 0.8); /* Réduit l'intensité de l'ombre */
+    margin-top: 1rem;
+  
+  }
+  
+  .btn__back:hover {
+    opacity: 0.8;
+    background-color: #497d5d; /* Vert légèrement plus sombre au survol */
+    box-shadow: 0 0 6px rgba(73, 125, 93, 0.8);
+  
+  }
+
   
 
 
-  @media screen and (min-width: 1200px) {
 
-    .card-container {
-
-        min-height: 53vh;
-        margin: 2rem;
-
-
-    }
-
-
-
-
-  }
 
   @media screen and (max-width: 768px) {
     .card-container {

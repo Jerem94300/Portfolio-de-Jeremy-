@@ -6,9 +6,16 @@
 
 
 /* Style page d'accueil */
-
-.container{
+body{
   display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.container {
+  display: flex;
+  height: 100vh !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -17,26 +24,34 @@
 
   .landing__page {
     display: flex;
+    height: 100% !important;
     align-items: center;
     justify-content: center;
   }
   
   .title__main {
-    width: 600px;
-    font-size: 2rem;
+    width: 100%;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 2rem;
   
   }
+
+
   
   .title__h2 {
-    font-size: 4rem;
+    width: 100%;
+    font-size: 3rem;
     color: #7fbe97;
     animation: fadeIn 2s ease-out;
     text-align: center;
   }
   
   .paragraph__main {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    max-width: 60%;
     font-size: 1.5rem;
     line-height: 3rem;
     margin-top: 1.5rem;
@@ -44,13 +59,12 @@
   }
   
   .presentation__main {
-    width: 100% !important;
+    width: 80%;
     display: flex;
     flex-direction: column;
     width: auto;
-    align-items: flex-start;
     justify-content: center !important;
-    align-self: center !important;
+    align-items: center !important;
     text-align: center;
    
   }
@@ -78,7 +92,7 @@
   
   }
   
-
+/* 
   @media screen and (min-width: 1200px) {
     .landing__page{
         display: flex;
@@ -122,7 +136,7 @@
     }
 
   }
-  
+   */
 
 
   @media screen and (max-width: 768px) {
@@ -147,8 +161,8 @@
         position: fixed;
         z-index: -1;
         opacity: 10%;
-        top: 20%;
-        left: 22%;
+        top: 40%;
+        left: 10%;
         
       
         

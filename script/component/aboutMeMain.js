@@ -47,8 +47,8 @@ export const AboutMe = () => {
   </div>
   <!-- Central Buttons -->
   <div class="buttons-container">
-    <button class="btn__download">Download CV</button>
-    <button class="btn__back">Back</button>
+     <button class="btn__download" onclick="window.location.href='assets/documents/CV.pdf'">Download CV</button>
+    <button class="btn__back" onclick="window.location.href='index.html'">Back</button>
   </div>
 </section>
     

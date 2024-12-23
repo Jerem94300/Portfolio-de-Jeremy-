@@ -14,16 +14,19 @@
 /* Styles Page Expériences */
 .experience__container {
   display: flex; /* Flexbox pour un alignement horizontal */
-  justify-content: space-evenly; /* Centre les cartes horizontalement */
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center !important;
   padding: 2rem;
   width: 100%;
+  margin-top: 16rem;
 
 }
 
 
 .experience__card {
-  width: 450px;
-  height: 500px;
+  width: 225px;
+  height: 250px;
   position: relative;
   display: flex;
   flex-direction: column !important;
@@ -66,7 +69,6 @@
 
 /* Contour animation vert */
 .experience__card {
-  content: "";
   inset: -3px; /* Pour couvrir le contour */
   border-radius: 10px;
   border: 4px solid transparent;
@@ -142,9 +144,7 @@
 
 }
 .experience__card:hover{
-  animation: none;
-  opacity: 95%;
-  border: 10px solid #7fbe97;
+  opacity: 60%;
   border-radius: 5px;
  
  }
@@ -173,32 +173,14 @@
 
 
 
-
-
-  @media screen and (min-width: 1200px) {
-    .experience__container {
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-        min-height: 67vh;
-        margin: 2rem;
-
-
-    }
-
-
-
-
-  }
-
   @media screen and (max-width: 768px) {
     .experience__container {
         min-height: 100vh;
-        display: flex;
-        flex-direction: column !important;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center !important;
+        align-items: center !important;
         gap: 2rem;
 
     }
@@ -206,7 +188,9 @@
     .experience__card {
       width: 225px;
       height: 250px;
-     
+
+    
+
     
     }
     
