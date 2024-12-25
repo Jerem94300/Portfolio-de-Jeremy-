@@ -9,7 +9,7 @@ export const Games = () => {
 
         </div>
         <div class="experience__card" id="sudoku">
-          <button class="btn__download btn__game" onclick="window.location.href='https://jerem94300.github.io/Mastermind/'">Jouer</button>
+          <button class="btn__download btn__game" onclick="window.location.href='https://jerem94300.github.io/Sudoku/'">Jouer</button>
         </div>
 
         
