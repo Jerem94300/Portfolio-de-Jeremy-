@@ -1,4 +1,10 @@
+
+
+
 export const Home = () => {
+
+
+
 
     return`
        <section class="landing__page">

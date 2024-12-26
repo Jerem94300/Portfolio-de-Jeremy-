@@ -15,14 +15,16 @@
 .experience__container {
   display: flex; /* Flexbox pour un alignement horizontal */
   justify-content: space-evenly; /* Centre les cartes horizontalement */
+  align-items: center !important;
   padding: 2rem;
   width: 100%;
+  height: 65vh;
 }
 
 
 .experience__card {
-  width: 450px;
-  height: 500px;
+  width: 250px;
+  height: 300px;
   perspective: 1000px; /* Conserve la perspective pour la rotation */
   position: relative;
   display: flex;
@@ -114,8 +116,7 @@
 }
 .experience__card:hover{
   animation: none;
-  opacity: 95%;
-  border: 10px solid rgba(208, 218, 212, 0.5);
+  opacity: 60%;
   border-radius: 5px;
  
  }
@@ -145,23 +146,6 @@
 
 
 
-
-  @media screen and (min-width: 1200px) {
-    .experience__container {
-      display: flex;
-      align-items: center;
-      text-align: center;
-
-        min-height: 67vh;
-        margin: 2rem;
-
-
-    }
-
-
-
-
-  }
 
   @media screen and (max-width: 768px) {
     .experience__container {
