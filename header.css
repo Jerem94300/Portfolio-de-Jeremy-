@@ -62,7 +62,7 @@
 
 
     .header{
-      width: 100%;
+      width: 100% !important;
         display: flex;
         flex-direction: column;
         max-height: 20% !important;
