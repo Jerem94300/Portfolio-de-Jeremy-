@@ -15,7 +15,7 @@ export const Home = () => {
           <button class="btn__download" onclick="window.location.href='assets/documents/CV.pdf'">Download CV</button>
         </div>
         <div class="photo__accueil">
-          <img src="images/Photoroom_20241016_153653.jpeg" alt="Photo de Jérémy" class="photo__item">
+          <img src="assets/images/Photoroom_20241016_153653.jpeg" alt="Photo de Jérémy" class="photo__item">
         </div>
       </section>
     `;
