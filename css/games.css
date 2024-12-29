@@ -36,7 +36,7 @@
 }
 
 #military{
-  background-image: url('assets/images/mastermind.jpeg');
+  background-image: url('/Portfolio_full_js/assets/images/mastermind.jpeg');
   background-size: cover;
   background-position: center;
 }
