@@ -36,19 +36,19 @@
 }
 
 #military{
-  background-image: url('/images/mastermind.jpeg');
+  background-image: url('/assets/images/mastermind.jpeg');
   background-size: cover;
   background-position: center;
 }
 
 #sudoku{
-  background-image: url('/images/image_sudoku.PNG');
+  background-image: url('/assets/images/image_sudoku.PNG');
   background-size: cover;
   background-position: center;
 }
 
 #hangman{
-  background-image: url('/images/image_hangman.PNG');
+  background-image: url('/assets/images/image_hangman.PNG');
   background-size: cover;
   background-position: center;
 
