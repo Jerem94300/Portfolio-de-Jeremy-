@@ -75,10 +75,14 @@ export const ExpDev = (data) => {
 
     
     </div>
+    <div class="block__right">
+        <div class="containerExp__title">My Projects</div>
+
     <div class="card__container">
-        <div class="experience__card" id="military"   onclick="window.location.href='#'">
+
+        <div class="experience__card fisheye__card" id="military"   onclick="window.location.href='https://jerem94300.github.io/Fisheye/'">
+        <img src="assets/images/fisheye.webp" alt="Logo Fisheye" class="fisheye__logo">
   
-          <h2 class="title">Military Experience</h2>
         </div>
         <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
           <h2 class="title">Web Developer</h2>
@@ -97,6 +101,8 @@ export const ExpDev = (data) => {
         <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
           <h2 class="title">Web Developer</h2>
         </div>
+    </div>
+
     </div>
       
       
