@@ -51,14 +51,58 @@ export const ExpDev = (data) => {
 
   console.log(data);
   console.log(data[0].src);
+
+  let iconesGrid = '';
+
+  data.forEach((icone) => {
+    console.log(icone.src);
+    iconesGrid += `
+    <div class="icones">
+        <img src="assets/${icone.src}" alt="" class="icone" />
+      </div>
+    `
+  });
+
+
+
   
 
 
     return `
+     <main id="content" class="main">
     <div class="experience__container fade-in">
-    <div class="icones">
-        <img src="/assets/images/html.png" alt="" class="icone" />
-      </div>
+    ${iconesGrid}
+
+    
+    </div>
+    <div class="card__container">
+        <div class="experience__card" id="military"   onclick="window.location.href='#'">
+  
+          <h2 class="title">Military Experience</h2>
+        </div>
+        <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
+          <h2 class="title">Web Developer</h2>
+        </div>
+          <div class="experience__card" id="military"   onclick="window.location.href='#'">
+  
+          <h2 class="title">Military Experience</h2>
+        </div>
+        <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
+          <h2 class="title">Web Developer</h2>
+        </div>
+          <div class="experience__card" id="military"   onclick="window.location.href='#'">
+  
+          <h2 class="title">Military Experience</h2>
+        </div>
+        <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
+          <h2 class="title">Web Developer</h2>
+        </div>
+    </div>
+      
+      
+     </main>
+
+    
       `
 
 

@@ -6,11 +6,13 @@
 
 
 .main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex; /* Divise l'espace en deux parties */
+  justify-content: space-evenly; /* Espace entre les deux zones */
+  align-items: center; /* Aligne les éléments en haut */
+  height: auto; /* Optionnel : pour occuper toute la hauteur */
+  gap: 2rem; /* Ajoute un espace entre les deux parties */
+  padding: 1rem;
+
 }
 
 /* .icones__container {
@@ -41,7 +43,59 @@
     height: 60px;
     perspective: 1000px;
     padding: 1rem;
-    object-fit: cover;
+    object-fit: contain;
 
 }
+
+.experience__container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 colonnes par rangée */
+  gap: 0.5rem; /* Espacement entre les icônes */
+  width: 40%; /* Occupe 60% de la largeur du parent */
+
+}
+
+.card__container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 colonnes par rangée */
+  justify-self: center;
+  align-self: center;
+  margin-top: 9rem;
+  gap: 4rem; /* Espacement entre les icônes */
+}
+
+
+.experience__card {
+  width: 150px;
+  height: 150px;
+  perspective: 1000px; /* Conserve la perspective pour la rotation */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Cards principales avec fond sombre et animation verte */
+.experience__card{
+  background: linear-gradient(145deg, #1e1e1e, #343434); /* Fond sombre */
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+/* Contour animation vert */
+.experience__card::before {
+  content: "";
+  position: absolute;
+  inset: -3px; /* Pour couvrir le contour */
+  border-radius: 10px;
+  border: 4px solid transparent;
+  background: linear-gradient(270deg, #1e1e1e, #7fbe97, #1e1e1e, #7fbe97);
+  background-size: 400% 400%;
+}
+
 
