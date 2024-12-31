@@ -10,4 +10,8 @@
      color: #7fbe97;
 
   }
+
+  header, footer {
+   transition: opacity 0.3s ease;
+ }
   
