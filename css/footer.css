@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
     border-top: 1px solid transparent;
@@ -61,6 +60,9 @@
     background-color: #497d5d; /* Vert légèrement plus sombre au survol */
     box-shadow: 0 0 6px rgba(73, 125, 93, 0.8);
   
+  }
+  .copyright{
+    margin-bottom: 0.5rem;
   }
 
   
