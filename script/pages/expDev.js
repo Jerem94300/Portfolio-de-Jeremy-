@@ -1,7 +1,8 @@
-import { getIcones } from "/utils/api.js";
 import { Header } from "../component/header.js";
 import { ExpDev } from "../component/expDevMain.js";
 import { Footer } from "../component/footer.js";
+import { getIcones } from "/utils/api.js";
+
 
 
 
