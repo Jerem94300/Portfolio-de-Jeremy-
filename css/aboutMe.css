@@ -202,11 +202,15 @@
   @media screen and (max-width: 768px) {
     .card-container {
         min-height: 100vh;
-
         display: flex;
         flex-direction: column !important;
         grid-template-columns: repeat(1, 1fr);
+        
 
+    }
+
+    .buttons-container {
+      margin-bottom: 4rem;
     }
 
 

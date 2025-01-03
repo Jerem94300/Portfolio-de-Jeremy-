@@ -139,8 +139,17 @@ body{
 
     .landing__page{
         position: relative;
-        width: 50%;
+        width: 100%;
         min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentation__main {
+      padding: 2rem;
+   
+     
     }
 
     .title__main {
@@ -154,14 +163,25 @@ body{
     
     .photo__item{
         display: flex;
-        position: fixed;
         z-index: -1;
         opacity: 10%;
-        top: 40%;
-        left: 10%;
+        align-self: center;
+        justify-self: center;
+        margin-right: 2rem;
+       
         
       
         
+
+    }
+
+    .paragraph__main{
+
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+
+
 
     }
 
