@@ -145,16 +145,21 @@
         display: flex;
         flex-direction: column !important;
         align-items: center;
-        row-gap: 6rem !important;
 
 
     }
 
     .experience__card {
-      width: 225px;
-      height: 250px;
+      width: 150px;
+      height: 175px;
      
     
+    }
+
+    .title {
+      width: 90%;
+      font-size: 1rem;
+      font-weight: bold;
     }
     
 
