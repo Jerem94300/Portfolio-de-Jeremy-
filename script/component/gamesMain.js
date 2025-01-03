@@ -71,20 +71,6 @@ export const Games = () => {
           <button class="btn__download btn__game" onclick="window.location.href='https://jerem94300.github.io/Jeu-du-Pendu/'">Jouer</button>
         </div>
 
-        
-        <div class="experience__card" id="webdev">
-          <h2 class="title">in coming </h2>
-          <button class="btn__download" onclick="window.location.href='#'">Télécharger mon CV</button>
-        </div>
-
-      
-        <div class="experience__card" id="webdev">
-          <h2 class="title">in coming</h2>
-          <button class="btn__download" onclick="window.location.href='#'">Télécharger mon CV</button>
-        </div>
-
-
-
 
 
       </div>
