@@ -9,6 +9,7 @@
 }
 
 .form {
+ 
   min-width: 500px !important;
   min-height: 600px !important;
   padding: 2rem;
@@ -88,6 +89,8 @@ input {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
     }
 
     .form__group {
