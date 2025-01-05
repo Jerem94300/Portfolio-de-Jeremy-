@@ -84,8 +84,10 @@ export const ExpDev = (data) => {
         <img src="assets/images/fisheye.webp" alt="Logo Fisheye" class="fisheye__logo">
   
         </div>
-        <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
-          <h2 class="title">Web Developer</h2>
+        <div class="experience__card peintres__card" id="webdev"  onclick="window.location.href='https://artistespeintres.jeremyabelard.fr'">
+          <img src="assets/images/image_card_peintres.png" alt="Logo Peintres" class="fisheye__logo">
+
+          
         </div>
           <div class="experience__card" id="military"   onclick="window.location.href='#'">
   
