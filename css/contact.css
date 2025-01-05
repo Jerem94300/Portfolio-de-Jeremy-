@@ -75,12 +75,18 @@ input {
 
   @media screen and (max-width: 768px) {
 
+    .header{
+      margin-bottom: 4rem;
+    }
+
     
     .contact__container {
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
    
     }
 
@@ -89,8 +95,7 @@ input {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 4rem;
-      margin-bottom: 4rem;
+
     }
 
     .form__group {
