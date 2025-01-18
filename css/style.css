@@ -77,62 +77,12 @@ body{
     box-shadow: 0 0 30px 6px rgba(90, 158, 116, 0.8); /* Initiale */
     animation: pulse-and-scale 3s infinite ease-in-out; /* Une seule animation */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour hover */
-    display: flex;
     justify-self: center !important;
     align-self: center !important;
   }
+
   
-  .photo__item:hover {
-    transform: scale(1.1); /* Légère augmentation au survol */
-    box-shadow: 0 0 50px 15px rgba(90, 158, 116, 0.8); /* Accentuation du halo au survol */
-  
-  }
-  
-/* 
-  @media screen and (min-width: 1200px) {
-    .landing__page{
-        display: flex;
-        text-align: center;
-        min-height: 74vh;
-    }
 
-    .title__main {
-        width: 100%;
-        font-size: 5rem;
-        text-align: center;
-        
-    }
-
-    .title__h2{
-      width: 100%;
-      
-      text-align: center;
-
-    }
-
-    .paragraph__main{
-      width: 100%;
-      font-size: 3rem;
-
-
-    }
-
-    .photo__item{
-        width: 50%;
-        height: auto;
-
-    }
-
-    .btn__download{
-        margin-bottom: 1rem;
-        display: flex;
-        align-self: center;
-        font-size: 4rem;
-        
-    }
-
-  }
-   */
 
 
   @media screen and (max-width: 768px) {
@@ -162,16 +112,7 @@ body{
 
     
     .photo__item{
-        display: flex;
-        z-index: -1;
-        opacity: 10%;
-        align-self: center;
-        justify-self: center;
-        margin-right: 2rem;
-       
-        
-      
-        
+        display: none !important;
 
     }
 
