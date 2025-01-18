@@ -75,18 +75,14 @@ input {
 
   @media screen and (max-width: 768px) {
 
-    .header{
-      margin-bottom: 4rem;
-    }
+
 
     
     .contact__container {
-        min-height: 100vh;
+        max-height: 100% !important;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 8rem;
-        margin-bottom: 8rem;
    
     }
 
@@ -95,6 +91,12 @@ input {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      min-width: 100% !important;
+      min-height: 100% !important;
+      padding: 0;
+      margin-top: 1rem !important;
+
+
 
     }
 
@@ -110,6 +112,7 @@ input {
     .form__control {
       margin-bottom: 1rem;
       font-size: 18px;
+      height: 1.5rem;
     }
 
     label {
@@ -123,16 +126,20 @@ input {
 
     #textarea {
       width: 90%;
-      height: 8rem;
+      height: 7rem;
     }
 
     .button__send {
-      width: 40%;
+      width: 150px;
       height: 50px;
     }
 
     .link__send {
       font-size: 16px;
+    }
+
+    .footer{
+      margin: 0;
     }
 
   

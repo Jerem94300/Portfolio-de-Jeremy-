@@ -29,14 +29,6 @@
     border-radius: 50%;
   }
   
-  /* Couleurs officielles des réseaux sociaux */
-  .footer__nav__list .nav__link:hover .bi-facebook {
-    color: #1877f2; /* Couleur officielle de Facebook */
-  }
-  
-  .footer__nav__list .nav__link:hover .bi-instagram {
-    color: #e1306c; /* Couleur officielle d'Instagram */
-  }
   
   .footer__nav__list .nav__link:hover .bi-linkedin {
     color: #0077b5; /* Couleur officielle de LinkedIn */
