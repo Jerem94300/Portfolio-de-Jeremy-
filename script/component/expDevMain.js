@@ -80,7 +80,7 @@ export const ExpDev = (data) => {
 
     <div class="card__container">
 
-        <div class="experience__card fisheye__card" id="military"   onclick="window.location.href='https://jerem94300.github.io/Fisheye/'">
+        <div class="experience__card fisheye__card" id="military"   onclick="window.location.href='https://fisheye.jeremyabelard.fr'">
         <img src="assets/images/fisheye.webp" alt="Logo Fisheye" class="fisheye__logo">
   
         </div>

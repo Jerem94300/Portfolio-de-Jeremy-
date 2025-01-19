@@ -1,8 +1,6 @@
 
-/* page experiences */
+/* page games */
 
-/* Styles pour la page Expériences */
-/* Styles Page Expériences */
 .experience__container {
   display: flex; /* Flexbox pour un alignement horizontal */
   height: 100vh;
@@ -58,7 +56,6 @@
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.6s ease-in-out;
-  cursor: pointer;
 
 }
 
@@ -92,6 +89,7 @@
 .btn__game:hover{
   transform: scale(1.5);
   font-weight: bold;
+  opacity: none !important;
 }
 
 /* Animation des contours autour des cartes */
