@@ -103,6 +103,14 @@
   object-fit: contain;
 }
 
+.petits__plats__logo{
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  padding: 1rem;
+  object-fit: contain;
+}
+
 
 
 @media screen and (max-width: 768px) {
