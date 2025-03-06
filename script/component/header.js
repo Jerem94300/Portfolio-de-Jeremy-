@@ -29,7 +29,7 @@ export const Header = () => {
                 </a>
             </li>
             <li class="list__item">
-                <a href="contact.html" class="nav__link nav__contact" data-page="contact">
+                <a href="contact.php" class="nav__link nav__contact" data-page="contact">
                     <i class="bi bi-telephone"></i>
                 </a>
             </li>
