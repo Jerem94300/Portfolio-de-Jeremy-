@@ -111,6 +111,15 @@
   object-fit: contain;
 }
 
+.lysdor__logo{
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  padding: 1rem;
+  border-radius: 1rem !important;
+  object-fit: contain;
+}
+
 
 
 @media screen and (max-width: 768px) {

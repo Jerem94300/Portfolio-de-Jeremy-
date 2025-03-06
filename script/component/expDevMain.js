@@ -93,8 +93,8 @@ export const ExpDev = (data) => {
         <img src="assets/images/Recette13.jpg" alt="Logo recette13" class="petits__plats__logo">
 
         </div>
-        <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
-          <h2 class="title">Web Developer</h2>
+        <div class="experience__card" id="webdev"  onclick="window.location.href='https://lelysdor.jeremyabelard.fr'">
+        <img src="assets/images/logo.WEBP" alt="Logo le Lys d'or" class="lysdor__logo">
         </div>
           <div class="experience__card" id="military"   onclick="window.location.href='#'">
   

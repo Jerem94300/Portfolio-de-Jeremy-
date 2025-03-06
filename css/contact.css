@@ -60,6 +60,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .link__send {
@@ -67,6 +68,16 @@ input {
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+.msg_FormSuccess {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 
