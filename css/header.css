@@ -1,90 +1,186 @@
 .header {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: baseline;
-    padding: 2rem;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 0;
-    z-index: 10;
-    border-bottom: 1px solid transparent;
-   
-    box-shadow: 0px 2px 5px rgba(127, 190, 151, 0.2); /* Ajout d'une ombre douce */
-  }
-  
-  .title__h1 {
-    color: white;
-    margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
+  position: fixed; /* Fixe le header en haut de la page */
+  top: 0;
+  left: 0;
+  width: 100%; /* Assure que le header prend toute la largeur */
+  z-index: 10;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 2px 5px rgba(127, 190, 151, 0.2);
+  border-bottom: 1px solid transparent;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between; /* Espace entre le titre et les autres éléments */
+  align-items: center; /* Aligne verticalement les éléments */
+  width: 100%;
+}
+
+.title__h1 {
+  color: white;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.title__link {
+  flex: 1; /* Le titre occupe l'espace à gauche */
+  text-align: left; /* Aligne le titre à gauche */
+  text-decoration: none;
+}
+
+.nav {
+  flex: 2; /* La navigation occupe une partie centrale */
+  display: flex;
+  justify-content: center; /* Centre les liens de navigation */
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center; /* Centre les éléments de la liste */
+  list-style: none;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  gap: 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #ffffff; /* Couleur par défaut */
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav__link i {
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav__link:hover i {
+  transform: scale(1.6); /* Agrandit l'icône au survol */
+  color: #7fbe97; /* Change la couleur de l'icône en vert au survol */
+}
+
+.language-switch {
+  flex: 1; /* Le switch occupe l'espace à droite */
+  display: flex;
+  justify-content: flex-end; /* Aligne le switch à droite */
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 4rem; /* Ajoute une marge à droite pour éloigner le switch du bord */
+}
+
+.language-label {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #7fbe97;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.flag {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.flag-fr {
+  margin-right: 0.5rem;
+}
+
+.flag-en {
+  margin-left: 0.5rem;
+}
+
+.flag-icon {
+  width: 24px; /* Réduit la largeur des icônes */
+  height: auto; /* Réduit la hauteur des icônes */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0; /* Réduit le padding pour les petits écrans */
   }
 
-  .title__link{
-    text-decoration: none;
-  }
-
-  .nav{
-    display: flex;
-    align-items: center !important;
+  .header__container {
+    flex-direction: column; /* Colonne pour les petits écrans */
+    align-items: center; /* Centre les éléments */
+    gap: 1rem; /* Espace entre les éléments */
     justify-content: center !important;
   }
-  
-  /* Menu masqué par défaut */
-  .nav__list {
-    display: flex;
-    list-style: none;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    gap: 2rem;
+  .title__h1 {
+    font-size: 1.5rem; /* Augmente la taille du titre */
+    text-align: center;
   }
-
+  .nav {
+    flex-direction: column; /* Colonne pour les petits écrans */
+    align-items: center; /* Centre les éléments */
+    gap: 1rem; /* Espace entre les éléments */
+  }
   .nav__link {
-    text-decoration: none;
-    color: #ffffff; /* Couleur par défaut */
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 1.2rem; /* Réduit la taille des liens */
   }
-  
-
-  .nav__link i {
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
+  .language-switch {
+    margin-right: 0; /* Supprime la marge pour les petits écrans */
+    margin-top: 1rem; /* Ajoute une marge en haut */
+    margin-bottom: 1rem; /* Ajoute une marge en bas */
   }
 
-  .nav__link:hover i {
-    transform: scale(1.6); /* Agrandit l'icône au survol */
-    color: #7fbe97; /* Change la couleur de l'icône en vert au survol */
+  .nav__list {
+    width: 100%;
+    gap: 1rem;
   }
-  
-
-
-
-  @media screen and (max-width: 768px) {
-
-
-    .header{
-      width: 100% !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-height: 20% !important;
-        padding: 0;
-        gap: 2rem;
-
-
-    }
-
-
-
-    .nav__list{
-        width: 100%;
-        gap: 1rem;
-    }
-    
-  }
-  
+}

@@ -71,53 +71,53 @@ export const AboutMe = () => {
 
   section.innerHTML = `
     <section class="about-me">
-      <h2 class="about-me__title">About Me</h2>
+      <h2 class="about-me__title">À propos de moi</h2>
       <div class="card-container">
-        <!-- Card: Date of Birth -->
+        <!-- Carte : Date de naissance -->
         <div class="card">
           <div class="card__front">
-            <img src="assets/images/image_birth.webp" alt="Date of Birth" class="card__image">
-            <p class="card__title">Date of Birth</p>
+            <img src="assets/images/image_birth.webp" alt="Date de naissance" class="card__image">
+            <p class="card__title">Date de naissance</p>
           </div>
           <div class="card__back">
-            <p class="card__content">December 5, 1982</p>
+            <p class="card__content">05 décembre 1982</p>
           </div>
         </div>
-        <!-- Card: Driving License and Languages -->
+        <!-- Carte : Permis de conduire et langues -->
         <div class="card">
           <div class="card__front">
-            <img src="assets/images/image_permis2.webp" alt="Driving License and Languages" class="card__image">
-            <p class="card__title">Driving License & Languages</p>
+            <img src="assets/images/image_permis2.webp" alt="Permis de conduire et langues" class="card__image">
+            <p class="card__title">Permis de conduire & Langues</p>
           </div>
           <div class="card__back">
-            <p class="card__content">License B, C<br>English (B2), Spanish (B2)</p>
+            <p class="card__content">Permis B, C<br>Anglais (B2), Espagnol (B2)</p>
           </div>
         </div>
-        <!-- Card: Software Skills -->
+        <!-- Carte : Compétences logicielles -->
         <div class="card">
           <div class="card__front">
-            <img src="assets/images/dev_img.webp" alt="Software Skills" class="card__image">
-            <p class="card__title">Software</p>
+            <img src="assets/images/dev_img.webp" alt="Compétences logicielles" class="card__image">
+            <p class="card__title">Logiciels</p>
           </div>
           <div class="card__back">
             <p class="card__content">Word, Excel, PowerPoint</p>
           </div>
         </div>
-        <!-- Card: Hobbies -->
+        <!-- Carte : Loisirs -->
         <div class="card">
           <div class="card__front">
-            <img src="assets/images/image_hobbies.webp" alt="Hobbies" class="card__image">
-            <p class="card__title">Hobbies</p>
+            <img src="assets/images/image_hobbies.webp" alt="Loisirs" class="card__image">
+            <p class="card__title">Loisirs</p>
           </div>
           <div class="card__back">
-            <p class="card__content">Hiking, Swimming, Trail Running, Video Games</p>
+            <p class="card__content">Randonnée, Natation, Trail, Jeux vidéo</p>
           </div>
         </div>
       </div>
-      <!-- Central Buttons -->
+      <!-- Boutons centraux -->
       <div class="buttons-container">
-         <button class="btn__download" id="download-cv">Download CV</button>
-         <button class="btn__back" onclick="window.location.href='index.html'">Back</button>
+         <button class="btn__download" id="download-cv">Télécharger le CV</button>
+         <button class="btn__back" onclick="window.location.href='index.html'">Retour</button>
       </div>
     </section>
   `;

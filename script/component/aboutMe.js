@@ -2,7 +2,6 @@ export const AboutMe = () => {
   let wheelTimeout;
   let lastScrollPosition = 0;
 
-  // Fonction pour cacher le header et le footer
   const hideHeaderFooter = () => {
     const header = document.querySelector("header");
     const footer = document.querySelector("footer");
@@ -10,7 +9,6 @@ export const AboutMe = () => {
     footer.style.opacity = "0";
   };
 
-  // Fonction pour réafficher le header et le footer
   const showHeaderFooter = () => {
     const header = document.querySelector("header");
     const footer = document.querySelector("footer");
@@ -18,7 +16,6 @@ export const AboutMe = () => {
     footer.style.opacity = "1";
   };
 
-  // Événement `scroll` pour mobile et PC
   window.addEventListener("scroll", () => {
     const currentScrollPosition = window.scrollY;
 
@@ -36,7 +33,6 @@ export const AboutMe = () => {
     lastScrollPosition = currentScrollPosition;
   });
 
-  // Événement `wheel` pour PC
   window.addEventListener("wheel", () => {
     hideHeaderFooter();
 
@@ -46,28 +42,9 @@ export const AboutMe = () => {
     }, 500);
   });
 
-  // Fonction pour suivre le téléchargement du CV
-  const trackDownloadCV = () => {
-    const downloadBtn = document.querySelector(".btn__download");
-
-    if (downloadBtn) {
-      downloadBtn.addEventListener("click", function (event) {
-        // Envoyer l'événement à Google Analytics
-        gtag("event", "download_cv", {
-          event_category: "engagement",
-          event_label: "Téléchargement CV",
-          value: 1,
-        });
-      });
-    }
-  };
-
-  // Appeler la fonction de tracking
-  trackDownloadCV();
-
   const section = document.createElement("section");
   section.className = "about-me";
-  section.id = "about-me-content"; // Ajout d'un ID unique pour la section
+  section.id = "about-me-content";
 
   section.innerHTML = `
     <section class="about-me">
@@ -124,3 +101,5 @@ export const AboutMe = () => {
 
   return section;
 };
+
+export default AboutMe;

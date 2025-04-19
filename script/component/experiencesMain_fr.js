@@ -1,4 +1,4 @@
-export const Games = () => {
+export const Experiences = () => {
   let wheelTimeout;
   let lastScrollPosition = 0;
 
@@ -48,31 +48,23 @@ export const Games = () => {
     }, 500);
   });
 
-  return `
+  const section = document.createElement("section");
+  section.className = "experience__page";
+  section.id = "experience__page";
+
+  section.innerHTML = `
 
        <div class="experience__container fade-in">
-        <div class="experience__card" id="military">
-        <img src='assets/images/mastermind_thumbnail.png' alt="Image mastemind" class="mastermind__img">
-          <button class="btn__download btn__game" onclick="window.location.href='https://mastermind.jeremyabelard.fr/'">Play</button>
-
+        <div class="experience__card" id="military"   onclick="window.location.href='expMilitary.html'">
+  
+          <h2 class="title">Expérience militaires</h2>
         </div>
-        <div class="experience__card" id="sudoku">
-        <img src='assets/images/image_sudoku.PNG' alt="Image sudoku" class="sudoku__img">
-          <button class="btn__download btn__game" onclick="window.location.href='https://sudoku.jeremyabelard.fr/'">Play</button>
+        <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
+          <h2 class="title">Developpeur Web</h2>
         </div>
-
-        
-        <div class="experience__card" id="hangman">
-        <img src='assets/images/image_hangman.PNG' alt="Image hangman" class="hangman__img">
-          <button class="btn__download btn__game" onclick="window.location.href='https://hangman.jeremyabelard.fr/'">Play</button>
-        </div>
-
-
-
       </div>
    
    
    `;
+  return section;
 };
-
-export default Games;
