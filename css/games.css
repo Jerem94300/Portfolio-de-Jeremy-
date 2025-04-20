@@ -1,4 +1,3 @@
-
 /* page games */
 
 .experience__container {
@@ -7,9 +6,7 @@
   justify-content: space-evenly;
   align-items: center !important;
   width: 100%;
-
 }
-
 
 .experience__card {
   width: 225px;
@@ -19,47 +16,39 @@
   flex-direction: column !important;
   justify-content: center;
   align-items: center;
-
-
 }
 
-#military{
+#military {
   background-size: cover;
   background-position: center;
 }
 
-#sudoku{
+#sudoku {
   background-size: contain;
   background-position: center;
 }
-.sudoku__img{
+.sudoku__img {
   width: 100%;
   height: 100%;
 }
 
-.hangman__img{
+.hangman__img {
   width: 100%;
   height: 100%;
 }
 
-#hangman{
+#hangman {
   background-size: contain;
   background-position: center;
-
 }
-
-
 
 /* Cards principales avec fond sombre et animation verte */
-.experience__card{
+.experience__card {
   background: linear-gradient(145deg, #1e1e1e, #343434); /* Fond sombre */
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.6s ease-in-out;
-
 }
-
-
 
 /* Contour animation vert */
 .experience__card {
@@ -68,7 +57,6 @@
   border: 4px solid transparent;
   background: linear-gradient(270deg, #1e1e1e, #7fbe97, #1e1e1e, #7fbe97);
   background-size: 400% 400%;
-
 }
 
 /* Animation horaire */
@@ -81,15 +69,33 @@
   animation: borderAnimationCounterClockwise 4s linear infinite;
 }
 
-.btn__game{
+.btn__game {
   position: absolute;
   bottom: 0;
 }
 
-.btn__game:hover{
+.btn__game:hover {
   transform: scale(1.5);
   font-weight: bold;
   opacity: none !important;
+}
+
+.btn__back {
+  background-color: #5a9e74; /* Vert adouci */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 8px 1px rgba(90, 158, 116, 0.8); /* Réduit l'intensité de l'ombre */
+  margin-top: 1rem;
+}
+
+.btn__back:hover {
+  opacity: 0.8;
+  background-color: #497d5d; /* Vert légèrement plus sombre au survol */
+  box-shadow: 0 0 6px rgba(73, 125, 93, 0.8);
 }
 
 /* Animation des contours autour des cartes */
@@ -110,7 +116,6 @@
     background-position: 0% 50%;
   }
 }
-
 
 /* Animation de Texte IntÃ©rieur */
 .title {
@@ -136,16 +141,15 @@
 /* eclat lumineux Ã  l'apparition */
 .experience__card {
   animation: cardAppear 4s ease-in-out infinite;
-
 }
-.experience__card:hover{
+.experience__card:hover {
   opacity: 60%;
   border-radius: 5px;
- 
- }
+}
 
 @keyframes cardAppear {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1) rotateY(0deg);
   }
   50% {
@@ -153,45 +157,27 @@
   }
 }
 
-
-
-
 .title {
   width: 90%;
   font-size: 2rem;
   font-weight: bold;
 }
 
-
-
-
-
-
-
-  @media screen and (max-width: 768px) {
-    .experience__container {
-        margin-top: 10rem;
-        margin-bottom: 10rem;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center !important;
-        align-items: center !important;
-        gap: 2rem;
-
-    }
-
-    .experience__card {
-      width: 175px;
-      height: 200px;
-
-    
-
-    
-    }
-    
-
-
-
+@media screen and (max-width: 768px) {
+  .experience__container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 2rem;
   }
+
+  .experience__card {
+    width: 175px;
+    height: 200px;
+  }
+}

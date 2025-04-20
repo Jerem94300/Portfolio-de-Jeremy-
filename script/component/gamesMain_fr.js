@@ -71,6 +71,11 @@ export const Games = () => {
         </div>
 
 
+        <div class="buttons-container">
+        <button class="btn__back" onclick="window.location.href='index.html'">Retour</button>
+        </div>
+
+
 
       </div>
    

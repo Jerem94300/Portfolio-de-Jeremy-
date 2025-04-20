@@ -14,6 +14,7 @@ export const Header = () => {
             <li class="list__item"><a href="aboutme.html" class="nav__link nav__about" data-page="aboutMe"><i class="bi bi-person"></i></a></li>
             <li class="list__item"><a href="experiences.html" class="nav__link nav__experience" data-page="experience"><i class="bi bi-briefcase"></i></a></li>
             <li class="list__item"><a href="games.html" class="nav__link nav__games" data-page="games"><i class="bi bi-controller"></i></a></li>
+            <li class="list__item"><a href="photo-video.html" class="nav__link nav__photo-video" data-page="photoVideo"><i class="bi bi-camera-reels"></i></a></li>
             <li class="list__item"><a href="contact.php" class="nav__link nav__contact" data-page="contact"><i class="bi bi-telephone"></i></a></li>
           </ul>
         </nav>

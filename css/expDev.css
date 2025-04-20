@@ -1,48 +1,40 @@
-
-.main{
+.main {
   display: flex; /* Divise l'espace en deux parties */
   justify-content: space-evenly; /* Espace entre les deux zones */
   align-items: center; /* Aligne les éléments en haut */
   gap: 2rem; /* Ajoute un espace entre les deux parties */
   width: 100% !important;
   height: 90vh;
-
 }
-
-
 
 .icones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgb(12, 112, 79);
-    margin-top: 3rem;
-    width: 80px;
-    height: 80px;
-    padding: 1rem;
-    border-radius: 50%;
-  }
-  
-
-
-.icone{
-    width: 60px;
-    height: 60px;
-    perspective: 1000px;
-    padding: 1rem;
-    object-fit: contain;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(12, 112, 79);
+  margin-top: 3rem;
+  width: 80px;
+  height: 80px;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
-.block__right{
+.icone {
+  width: 60px;
+  height: 60px;
+  perspective: 1000px;
+  padding: 1rem;
+  object-fit: contain;
+}
+
+.block__right {
   display: flex;
   flex-direction: column;
   align-self: flex-start !important;
   margin-top: 5rem;
-
 }
 
-.containerExp__title{
+.containerExp__title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,21 +47,19 @@
 
 .experience__container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   justify-content: center !important;
   align-items: center !important;
-
 }
 
-.card__container{
+.card__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 3 colonnes par rangée */
   justify-self: center;
   align-self: center;
   gap: 1rem; /* Espacement entre les icônes */
 }
-
 
 .experience__card {
   width: 150px;
@@ -79,11 +69,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
-
 }
-
-
 
 /* Contour animation vert */
 .experience__card::before {
@@ -95,7 +81,7 @@
   background-size: 400% 400%;
 }
 
-.fisheye__logo{
+.fisheye__logo {
   width: 100px;
   height: 100px;
   perspective: 1000px;
@@ -103,7 +89,7 @@
   object-fit: contain;
 }
 
-.petits__plats__logo{
+.petits__plats__logo {
   width: 100px;
   height: 100px;
   perspective: 1000px;
@@ -111,7 +97,7 @@
   object-fit: contain;
 }
 
-.lysdor__logo{
+.lysdor__logo {
   width: 100px;
   height: 100px;
   perspective: 1000px;
@@ -120,55 +106,66 @@
   object-fit: contain;
 }
 
+.btn__back {
+  background-color: #5a9e74; /* Vert adouci */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 8px 1px rgba(90, 158, 116, 0.8); /* Réduit l'intensité de l'ombre */
+  margin-top: 1rem;
+}
 
+.btn__back:hover {
+  opacity: 0.8;
+  background-color: #497d5d; /* Vert légèrement plus sombre au survol */
+  box-shadow: 0 0 6px rgba(73, 125, 93, 0.8);
+}
 
 @media screen and (max-width: 768px) {
-  
-  .main{
+  .main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
     height: 100% !important;
-
-
+    flex-direction: column; /* Affiche les éléments en colonne */
   }
 
   .experience__container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100% !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Minimum 2 colonnes */
+    gap: 1rem;
     justify-content: center !important;
     align-items: center !important;
     margin-top: 6rem;
-    
-  
   }
 
-  .block__right{
+  .block__right {
     width: 100%;
     margin-top: 0;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 8rem;
-  
   }
 
   .icones {
-
     width: 50px;
     height: 50px;
   }
 
-  .icone{
+  .icone {
     width: 50px;
-    height: 50px;  
+    height: 50px;
     perspective: 1000px;
     padding: 1rem;
     object-fit: contain;
-
-  
   }
 
+  .card__container {
+    grid-template-columns: 1fr; /* Une seule colonne */
+  }
 }

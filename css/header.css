@@ -67,6 +67,16 @@
   color: #7fbe97; /* Change la couleur de l'icône en vert au survol */
 }
 
+.nav__link.nav__photo-video i {
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav__link.nav__photo-video:hover i {
+  transform: scale(1.6); /* Agrandit l'icône au survol */
+  color: #7fbe97; /* Change la couleur de l'icône en vert au survol */
+}
+
 .language-switch {
   flex: 1; /* Le switch occupe l'espace à droite */
   display: flex;
@@ -169,18 +179,22 @@ input:checked + .slider:before {
     flex-direction: column; /* Colonne pour les petits écrans */
     align-items: center; /* Centre les éléments */
     gap: 1rem; /* Espace entre les éléments */
+    order: 3; /* Place la navigation en bas */
   }
   .nav__link {
     font-size: 1.2rem; /* Réduit la taille des liens */
   }
   .language-switch {
-    margin-right: 0; /* Supprime la marge pour les petits écrans */
-    margin-top: 1rem; /* Ajoute une marge en haut */
-    margin-bottom: 1rem; /* Ajoute une marge en bas */
+    order: 2; /* Place le switch au milieu */
+    margin: 0; /* Supprime les marges */
   }
 
   .nav__list {
     width: 100%;
     gap: 1rem;
+  }
+
+  .title__link {
+    order: 1;
   }
 }

@@ -62,6 +62,9 @@ export const Experiences = () => {
         <div class="experience__card" id="webdev"  onclick="window.location.href='expDev.html'">
           <h2 class="title">Developpeur Web</h2>
         </div>
+         <div class="buttons-container">
+        <button class="btn__back" onclick="window.location.href='experiences.html'">Retour</button>
+        </div>
       </div>
    
    

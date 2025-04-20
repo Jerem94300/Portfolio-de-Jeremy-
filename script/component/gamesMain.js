@@ -67,6 +67,10 @@ export const Games = () => {
           <button class="btn__download btn__game" onclick="window.location.href='https://hangman.jeremyabelard.fr/'">Play</button>
         </div>
 
+         <div class="buttons-container">
+        <button class="btn__back" onclick="window.location.href='index.html'">Back</button>
+        </div>
+
 
 
       </div>
