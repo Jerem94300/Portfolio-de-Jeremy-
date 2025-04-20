@@ -1,4 +1,3 @@
-
 <?php
 // Activer l'affichage des erreurs PHP
 ini_set('display_errors', 1);
@@ -34,7 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bindParam(':message', $_POST['message']);
 
     $success = $stmt->execute();
-
 }
 
 
@@ -79,125 +77,122 @@ if ($success) {
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NCMRXL4Z');</script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NCMRXL4Z');
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PS0EV8L4EJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS0EV8L4EJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-PS0EV8L4EJ');
-</script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio de Abélard Jérémy</title>
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/body.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PS0EV8L4EJ');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Abélard Jérémy</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCMRXL4Z"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> 
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCMRXL4Z"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 
 
 
-  <header class="header">
-      <a href="index.html" class="title__link">
-        <h1 class="title__h1">Jérémy Abelard</h1>
+    <header class="header">
+        <a href="index.html" class="title__link">
+            <h1 class="title__h1">Jérémy Abelard</h1>
         </a>
-  
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="list__item">
-                <a href="index.html" class="nav__link nav__home" data-page="home">
-                    <i class="bi bi-house-door"></i>
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="aboutme.html" class="nav__link nav__about" data-page="aboutMe">
-                    <i class="bi bi-person"></i>
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="experiences.html" class="nav__link nav__experience" data-page="experience">
-                    <i class="bi bi-briefcase"></i>
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="games.html" class="nav__link nav__games" data-page="games">
-                    <i class="bi bi-controller"></i>
-                </a>
-            </li>
-            <li class="list__item">
-                <a href="contact.php" class="nav__link nav__contact" data-page="contact">
-                    <i class="bi bi-telephone"></i>
-                </a>
-            </li>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="list__item"><a href="index.html" class="nav__link nav__home" data-page="home"><i class="bi bi-house-door"></i></a></li>
+                <li class="list__item"><a href="aboutme.html" class="nav__link nav__about" data-page="aboutMe"><i class="bi bi-person"></i></a></li>
+                <li class="list__item"><a href="experiences.html" class="nav__link nav__experience" data-page="experience"><i class="bi bi-briefcase"></i></a></li>
+                <li class="list__item"><a href="developerProduct.html" class="nav__link nav__developer-product" data-page="developerProduct"><i class="bi bi-laptop"></i></a></li>
+                <li class="list__item"><a href="photoVideo.html" class="nav__link nav__photo-video" data-page="photoVideo"><i class="bi bi-camera-reels"></i></a></li>
+                <li class="list__item"><a href="contact.php" class="nav__link nav__contact" data-page="contact"><i class="bi bi-telephone"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content" class="main">
+
+        <div class="contact__container">
+
+
+            <form method="post" action="" class="form" id="contact-form">
+                <div class="form__group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" required class="form__control">
+                </div>
+                <div class="form__group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" required class="form__control">
+                </div>
+                <div class="form__group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required class="form__control">
+                </div>
+                <div class="form__group">
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="textarea" class="form__control"></textarea>
+                </div>
+                <div class="button__send">
+                    <button type="submit" class="link__send">Send</button>
+                </div>
+                <!-- Message de validation de formumaire -->
+                <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && $success) : ?>
+                    <span class="msg_FormSuccess">Votre message a bien été envoyé.</span>
+                <?php endif; ?>
+
+            </form>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__nav__list">
+            <li><a href="https://www.linkedin.com/in/jérémy-abélard-512a762b1/" class="nav__link nav__link__footer"><i class="bi bi-linkedin"></i></a></li>
         </ul>
-    </nav>
-</header>
-  <main id="content" class="main">
-    
-    <div class="contact__container">
-     
-
-        <form method="post" action="" class="form" id="contact-form">
-            <div class="form__group">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" required class="form__control">
-            </div>
-            <div class="form__group">
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" required class="form__control">
-            </div>
-            <div class="form__group">
-                <label for="email">Email</label>
-                <input type="email" name="email" required class="form__control">
-            </div>
-            <div class="form__group">
-                <label for="message">Your Message</label>
-                <textarea name="message" id="textarea" class="form__control"></textarea>
-            </div>
-            <div class="button__send">
-            <button type="submit" class="link__send">Send</button>
-            </div>
-             <!-- Message de validation de formumaire -->
-            <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && $success) : ?>
-            <span class="msg_FormSuccess">Votre message a bien été envoyé.</span>
-            <?php endif; ?>
-    
-        </form>
-    </div>
-
-    
-  </main>
-
-  <footer class="footer">
-    <ul class="footer__nav__list">
-      <li><a href="https://www.linkedin.com/in/jérémy-abélard-512a762b1/" class="nav__link nav__link__footer"><i class="bi bi-linkedin"></i></a></li>
-    </ul>
         <p class="copyright">&copy; 2024 - Jérémy Abelard</p>
 
-  </footer>
+    </footer>
 
-  
+
 
 </body>
-</html>
 
+</html>

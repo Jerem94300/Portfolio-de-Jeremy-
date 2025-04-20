@@ -13,6 +13,7 @@ export const Header = () => {
             <li class="list__item"><a href="index.html" class="nav__link nav__home" data-page="home"><i class="bi bi-house-door"></i></a></li>
             <li class="list__item"><a href="aboutme.html" class="nav__link nav__about" data-page="aboutMe"><i class="bi bi-person"></i></a></li>
             <li class="list__item"><a href="experiences.html" class="nav__link nav__experience" data-page="experience"><i class="bi bi-briefcase"></i></a></li>
+            <li class="list__item"><a href="developerProduct.html" class="nav__link nav__developer-product" data-page="developerProduct"><i class="bi bi-laptop"></i></a></li>
             <li class="list__item"><a href="photoVideo.html" class="nav__link nav__photo-video" data-page="photoVideo"><i class="bi bi-camera-reels"></i></a></li>
             <li class="list__item"><a href="contact.php" class="nav__link nav__contact" data-page="contact"><i class="bi bi-telephone"></i></a></li>
           </ul>
