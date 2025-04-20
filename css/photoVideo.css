@@ -1,10 +1,14 @@
-/* page about me*/
+/* page about me */
 
 .main {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#content {
+  margin-top: 6rem;
 }
 
 .card-container {
@@ -23,48 +27,22 @@
   perspective: 1000px;
 }
 
-.card__front,
-.card__back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 15px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
+/* ========== SECTION ABOUT ME STYLES ========== */
 
-.card__front {
-  background: rgba(127, 190, 151, 0.8);
-}
-
-.card__back {
-  background: rgba(26, 26, 26, 0.9);
-  transform: rotateY(180deg);
-}
-
-/* page about me*/
-
-/* Styles spécifiques à la section "À propos" */
 .about-me {
-  /* margin-top: 8rem !important; */
   padding: 2rem;
-  background: linear-gradient(145deg, #1a1a1a, #202020); /* Dégradé subtil */
+  background: linear-gradient(145deg, #1a1a1a, #202020);
   color: #ffffff;
-  border-radius: 20px; /* Angles arrondis légèrement plus prononcés */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Ombre douce */
-  margin: 2rem auto; /* Centré avec espacement vertical */
-  max-width: 80%; /* Limiter la largeur pour un rendu harmonieux */
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animation */
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+  max-width: 80%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .about-me:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Ombre plus marquée */
-  transform: scale(1.005); /* Légère mise en avant */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.005);
 }
 
 .about-me__title {
@@ -72,16 +50,26 @@
   font-weight: bold;
   color: #7fbe97;
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.about-me__subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ccc;
   margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Conteneur des cartes */
 .about-me .card-container {
-  display: flex; /* Flexbox pour disposition horizontale */
-  justify-content: center; /* Centrer les cartes horizontalement */
-  align-items: center; /* Alignement vertical */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
-  overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
+  overflow-x: auto;
 }
 
 .about-me .card-container::-webkit-scrollbar {
@@ -97,19 +85,20 @@
   background: rgba(127, 190, 151, 1);
 }
 
-.about-me .buttons-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem; /* Espacement entre les boutons */
-  margin-top: 2rem;
-}
-
 /* Cartes */
 .about-me .card {
   position: relative;
   width: 250px;
   height: 300px;
   perspective: 1000px;
+  opacity: 0; /* Pour l'animation */
+  transform: translateY(50px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.about-me .card.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-me .card__front,
@@ -132,6 +121,7 @@
 .about-me .card__front {
   background: linear-gradient(180deg, #1e1e1e, #3a3a3a);
 }
+
 .about-me .card__back {
   background: rgba(26, 26, 26, 0.9);
   transform: rotateY(180deg);
@@ -148,8 +138,8 @@
 .about-me .card__image {
   width: 100%;
   height: 70%;
-  object-fit: cover;
-  background-color: #333; /* Fond au cas où l'image manque */
+  object-fit: contain; /* ⬅️ Était "cover" */
+  background-color: #333;
 }
 
 .about-me .card__title {
@@ -165,23 +155,66 @@
   padding: 1rem;
 }
 
+/* Boutons */
+
+.about-me .buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.btn__contact {
+  background-color: #7fbe97;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(127, 190, 151, 0.8);
+  transition: all 0.3s ease;
+}
+
+.btn__contact:hover {
+  background-color: #5a9e74;
+  color: white;
+  box-shadow: 0 0 10px rgba(127, 190, 151, 1);
+}
+
 .btn__back {
-  background-color: #5a9e74; /* Vert adouci */
+  background-color: #5a9e74;
   color: #ffffff;
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 0 8px 1px rgba(90, 158, 116, 0.8); /* Réduit l'intensité de l'ombre */
+  box-shadow: 0 0 8px 1px rgba(90, 158, 116, 0.8);
   margin-top: 1rem;
 }
 
 .btn__back:hover {
   opacity: 0.8;
-  background-color: #497d5d; /* Vert légèrement plus sombre au survol */
+  background-color: #497d5d;
   box-shadow: 0 0 6px rgba(73, 125, 93, 0.8);
 }
+
+/* Animation fade-up */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
 
 @media screen and (max-width: 768px) {
   .card-container {
