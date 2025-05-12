@@ -51,7 +51,7 @@
 
 /* Styles spécifiques à la section "À propos" */
 .about-me {
-  /* margin-top: 8rem !important; */
+  margin-top: 6rem !important; /* Ajout d'une marge supérieure pour espacer le contenu */
   padding: 2rem;
   background: linear-gradient(145deg, #1a1a1a, #202020); /* Dégradé subtil */
   color: #ffffff;
@@ -259,5 +259,12 @@
 
   .card__title {
     font-size: 1rem !important;
+  }
+
+  .about-me {
+    margin-top: 9rem !important; /* Ajuste la marge supérieure pour les petits écrans */
+    padding: 1rem !important; /* Réduit le padding pour les petits écrans */
+    margin: 1rem auto; /* Ajuste la marge pour les petits écrans */
+    max-width: 90%; /* Limite la largeur pour un rendu harmonieux */
   }
 }

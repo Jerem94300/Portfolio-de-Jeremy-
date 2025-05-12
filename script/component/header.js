@@ -5,7 +5,7 @@ export const Header = () => {
   header.innerHTML = `
       <div class="header__container">
         <a href="index.html" class="title__link">
-          <h1 class="title__h1">Jérémy Abelard</h1>
+          <img src="assets/images/logoTAAKODEvect.PNG" alt="Logo" class="header__logo">
         </a>
   
         <nav class="nav">

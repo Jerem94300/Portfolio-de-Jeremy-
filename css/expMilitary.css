@@ -1,61 +1,48 @@
-
-.main{
+.main {
   display: flex; /* Divise l'espace en deux parties */
   flex-direction: column;
   justify-content: center; /* Espace entre les deux zones */
   align-items: center; /* Aligne les éléments en haut */
   width: 100% !important;
   height: 100vh;
-
 }
 
-
-.block__dates{
+.block__dates {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5rem;
-
-
-
 }
 
-.block__description{
+.block__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
-
-
 }
 
-
-.btn__date{
+.btn__date {
   padding: 1rem;
   border-radius: 2rem;
   background-color: #7fbe97;
   color: black;
   transition: all 0.5s;
   cursor: pointer;
-
-
-
 }
 
-.btn__actif{
+.btn__actif {
   background-color: aliceblue !important;
-  color : red !important;
-
+  color: red !important;
 }
 
-.btn__date:hover{
+.btn__date:hover {
   transform: scale(1.5);
   font-weight: bold;
   opacity: none !important;
 }
 
-.dateCurrent{
+.dateCurrent {
   width: 5OOpx;
   font-size: 24px;
   font-weight: bold;
@@ -63,18 +50,18 @@
   height: auto;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.details__date{
+.details__date {
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: flex-start;
 }
 
-.location__military{
+.location__military {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,74 +69,57 @@
   gap: 2rem;
 }
 
-.localisation__image{
+.localisation__image {
   width: 250px;
   margin-bottom: 0.5rem;
-
 }
 
-.title__location{
+.title__location {
   text-align: center;
   font-size: 1rem;
-
 }
 
-.block__insigne__rgt{
+.block__insigne__rgt {
   display: flex;
   justify-content: center;
-
 }
 
-.insigne__rgt{
+.insigne__rgt {
   width: 200px;
   margin-bottom: 2rem;
-
-  
 }
 
-.description__item0{
+.description__item0 {
   text-align: center;
   font-size: 1rem;
   max-width: 400px;
-
-
-
-
 }
 
-.description__item1{
+.description__item1 {
   max-width: 400px;
   height: auto;
   margin-bottom: 1rem;
   font-size: 1rem;
 
   text-align: center;
-
-
 }
 
-.description__item2{
+.description__item2 {
   max-width: 400px;
   font-size: 1rem;
   height: auto;
   margin-bottom: 1rem;
   text-align: center;
-
-
-
 }
-.description__item3{
+.description__item3 {
   max-width: 400px;
   height: auto;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 1rem;
-
-
 }
 
-
-.image__mixRima{
+.image__mixRima {
   width: 250px;
   height: 250px;
   border-radius: 4rem;
@@ -157,42 +127,24 @@
   object-fit: cover;
 }
 
-.images__military{
+.images__military {
   text-align: center;
   font-size: 2rem;
 }
 
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
-
-  
-
-
-
-  .block__dates{
+  .block__dates {
     display: flex;
     flex-wrap: wrap;
     row-gap: 1rem !important;
     margin-top: 6rem;
-
-
   }
 
-  .btn__date{
+  .btn__date {
     padding: 0.5rem;
-   
-  
-  
-  
   }
-  
 
-  .details__date{
+  .details__date {
     width: 100%;
     height: 50vh !important;
     display: flex !important;
@@ -201,34 +153,31 @@
     gap: 2rem;
   }
 
-  .dateCurrent{
+  .dateCurrent {
     margin-bottom: 2rem;
   }
 
-  .location__military{
+  .location__military {
     gap: 0;
-
-
   }
 
-  .block__description{
-
+  .block__description {
     gap: 0;
-
   }
 
-  .insigne__rgt{
+  .insigne__rgt {
     margin-bottom: 0.5rem;
   }
 
-  .description__item3{
+  .description__item3 {
     margin-bottom: 6.5rem;
   }
 
-  .image__mixRima{
+  .image__mixRima {
     margin-bottom: 0.5rem;
   }
 
-
-
+  .main {
+    margin-top: 4rem !important;
+  }
 }

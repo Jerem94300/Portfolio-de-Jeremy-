@@ -7,6 +7,7 @@ export const Home = () => {
         <h2 class="title__main">Full-Stack Web & Mobile Developer</h2>
         <h1 class="title__h2">Hi, I am <span class="name__main">Jérémy</span></h1>
         <p class="paragraph__main">Passionate web developer, I create high-performing, custom websites for an optimal user experience.</p>
+        <a href="developerProduct.html" class="btn__needWebsite">Need a Website?</a>
         <button class="btn__download">Download CV</button>
       </div>
       <div class="photo__accueil">
@@ -54,7 +55,7 @@ export const Home = () => {
   window.addEventListener("wheel", onWheel);
 
   section.querySelector(".btn__download").addEventListener("click", () => {
-    window.location.href = "assets/documents/CV_DWWM_ENG.pdf";
+    window.location.href = "assets/documents/CV jeremy_Abelard_DWWM_eng.pdf";
   });
 
   return section;

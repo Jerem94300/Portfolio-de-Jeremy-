@@ -10,6 +10,12 @@
   border-bottom: 1px solid transparent;
 }
 
+.header__logo {
+  width: 100px; /* Largeur de l'icône */
+  height: auto; /* Hauteur de l'icône */
+  object-fit: cover; /* Ajuste l'image à la taille de l'icône */
+}
+
 .header__container {
   display: flex;
   justify-content: space-between; /* Espace entre le titre et les autres éléments */
@@ -168,7 +174,6 @@ input:checked + .slider:before {
   .header__container {
     flex-direction: column; /* Colonne pour les petits écrans */
     align-items: center; /* Centre les éléments */
-    gap: 1rem; /* Espace entre les éléments */
     justify-content: center !important;
   }
   .title__h1 {
@@ -187,6 +192,7 @@ input:checked + .slider:before {
   .language-switch {
     order: 2; /* Place le switch au milieu */
     margin: 0; /* Supprime les marges */
+    margin-bottom: 1rem; /* Ajoute une marge en bas */
   }
 
   .nav__list {

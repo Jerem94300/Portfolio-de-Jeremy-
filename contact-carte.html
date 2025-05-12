@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carte de visite – TAAKODE</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+        color: #f0f0f0;
+        margin: 0;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 30px;
+        background-color: #121212;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 255, 136, 0.1);
+      }
+
+      .logo {
+        width: 140px;
+        margin-bottom: 30px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: 32px;
+        color: #00cc77; /* Vert plus doux */
+      }
+
+      .info {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #dddddd;
+      }
+
+      .button {
+        display: block;
+        margin: 20px auto;
+        padding: 14px 25px;
+        background-color: #00cc77;
+        color: #0a0a0a;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 320px;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #00b169;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="assets/images/logoTAAKODEvect.PNG"
+        alt="Logo TAAKODE"
+        class="logo"
+      />
+      <h1>Jérémy Abelard</h1>
+      <div class="info">📧 contact@jeremyabelard.fr</div>
+      <div class="info">📞 06 42 54 78 30</div>
+
+      <a href="https://jeremyabelard.fr" class="button" target="_blank">
+        Voir mon portfolio
+      </a>
+      <a href="taakode_contact.vcf" class="button" download>
+        Télécharger mon contact
+      </a>
+    </div>
+  </body>
+</html>

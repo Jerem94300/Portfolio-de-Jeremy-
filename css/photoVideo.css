@@ -51,6 +51,7 @@
   color: #7fbe97;
   text-align: center;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .about-me__subtitle {
@@ -239,5 +240,12 @@
 
   .card__title {
     font-size: 1rem !important;
+  }
+
+  .about-me {
+    margin-top: 12rem !important;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 90%;
   }
 }
